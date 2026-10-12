@@ -1,0 +1,4 @@
+font-family = JetBrainsMono
+theme = catppuccin-mocha
+window-padding-balance=true
+window-padding-x=5

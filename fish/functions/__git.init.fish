@@ -43,13 +43,19 @@ function __git.init
   __git.create_abbr gc         git commit -v
   __git.create_abbr gca        git commit -v --amend
   __git.create_abbr gcan       git commit -v --amend --no-edit
+  __git.create_abbr gcann      git commit -v --amend --no-edit --no-verify
+  __git.create_abbr gcam       git commit -am 
   __git.create_abbr gcm        git commit -m
+  __git.create_abbr gcmn       git commit --no-verify -m 
   __git.create_abbr gcmm       __git.commit_with_message_matters_format
   __git.create_abbr gco        git checkout
   __git.create_abbr gcom       git checkout \(__git.default_branch\)
   __git.create_abbr gpf        git push --force-with-lease
+  __git.create_abbr gpfn       git push --force-with-lease --no-verify
   __git.create_abbr gpl        git pull
   __git.create_abbr gph        git push
+  __git.create_abbr gphn       git push --no-verify
+  __git.create_abbr grb        git rebase
   __git.create_abbr grbm       git rebase \(__git.default_branch\)
   __git.create_abbr grbih      __git.rebase_interactive_head_relative
   __git.create_abbr grbim      git rebase \(__git.default_branch\) --interactive
